@@ -1,5 +1,8 @@
 # Todo's
 
+| main url = /api/v1/
+
+
 ### Methods
 
 - get
@@ -19,8 +22,8 @@
 - [get] /users
 - [get] /users/:id
 - [post] /users
-- [put] /users
-- [delete] /users
+- [put] /users/:id
+- [delete] /users/:id
 
 ---
 
