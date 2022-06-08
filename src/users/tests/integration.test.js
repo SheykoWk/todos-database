@@ -28,10 +28,10 @@ describe('Integration Testing For Users', () => {
         chai.request(app)
             .get('/api/v1/users')
             .end((err, res) => {
-                console.log(res.body)
-                chai.assert.equal(res.body, usersDB)
                 chai.assert.equal(res.status, 200)
+                chai.assert.equal(res.body[0].first_name, "Sahid")
                 chai.assert.equal(res.body.length, usersDB.length)
+                done()
             })
     })
 })

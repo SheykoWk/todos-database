@@ -3,14 +3,12 @@ const usersServices = require('./users.http')
 
 router.route('/users')
     .get(usersServices.getUsers)
-    .post(() => {
-        
-    })
+    .post(usersServices.postUser)
 
 router.route('/users/:id')
-    .get()
-    .put()
-    .delete()
+    .get(usersServices.getUserById)
+    .put(usersServices.putUser)
+    .delete(usersServices.deleteUser)
 
 
 exports.router = router

@@ -1,9 +1,12 @@
 const express = require('express');
+const morgan = require('morgan');
 const config = require('../config')
 const userRoutes = require('./users/users.routes').router
 
 
 const app = express()
+
+app.use(morgan("dev"))
 
 app.use(express.json())
 
