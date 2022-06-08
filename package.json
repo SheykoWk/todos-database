@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./src/app.js",
     "dev": "nodemon ./src/app.js",
-    "test": "./node_modules/.bin/mocha"
+    "test": "PORT=5050 ./node_modules/.bin/mocha ./src/*/tests/*.test.js"
   },
   "keywords": [],
   "author": "",
