@@ -1,13 +1,11 @@
 const router = require('express').Router();
-
-
-
+const usersServices = require('./users.http')
 
 router.route('/users')
-    .get((req, res) => {
-        res.status(200).json(usersDB)
+    .get(usersServices.getUsers)
+    .post(() => {
+        
     })
-    .post()
 
 router.route('/users/:id')
     .get()

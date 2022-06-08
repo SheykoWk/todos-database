@@ -48,13 +48,16 @@
 
 #### Users
 
-- getAllUsers
-- getUserById
+- getAllUsers select * from users
+- getUserById select * from users where id = 1
 - createUser
 - editUser
 - deleteUser
 
-
+1. Routes (Definir las rutas)
+2. Controllers (Definir la logica de mi base de datos)
+3. Servicios/Http (Crear los servicios que reciben la peticion y la respuesta, "req, res")
+4. Routes (Desarrollar las rutas de mi aplicacion)
 
 
 

@@ -4,3 +4,13 @@
 
 ? }
 */ 
+
+const usersControllers = require('./users.controllers')
+
+const getUsers = (req, res) => {
+    res.status(200).json(usersControllers.getAllUsers())
+}
+
+module.exports = {
+    getUsers
+}

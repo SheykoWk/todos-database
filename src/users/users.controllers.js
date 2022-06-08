@@ -40,5 +40,14 @@ const editUser = (id, body) => {
 }
 
 const deleteUser = (id) => {
-    
+
 }
+
+module.exports = {
+    getAllUsers,
+    getUserById,
+    createUser,
+    editUser,
+    deleteUser
+}
+
