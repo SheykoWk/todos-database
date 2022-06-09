@@ -35,7 +35,8 @@ const getUserById = (id) => {
 const createUser = (body) => {
     const newUser = {
         id: usersDB[usersDB.length - 1].id + 1,
-        ...body 
+        ...body,
+        active: false
     }
     usersDB.push(newUser)
     return body

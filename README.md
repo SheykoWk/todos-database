@@ -33,6 +33,18 @@
 - [put] /todos
 - [delete] /todos
 
+Admin
+
+- preparar la clase
+- sacar la basura
+- lavar la ropa
+
+Jose 
+
+- Prepararse para sus entrevistas
+- Arreglar su linkedin
+- Crear su CV en ingles
+
 ---
 
 - [get] /categories

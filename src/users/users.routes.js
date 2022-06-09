@@ -2,7 +2,7 @@ const router = require('express').Router();
 const usersServices = require('./users.http')
 
 router.route('/users')
-    .get(usersServices.getUsers)
+    .get( usersServices.getUsers)
     .post(usersServices.postUser)
 
 router.route('/users/:id')
