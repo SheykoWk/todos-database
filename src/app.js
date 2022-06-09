@@ -2,7 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const config = require('../config')
 const userRoutes = require('./users/users.routes').router
-
+const todosRoutes = require('./todos/todos.routes').router
 
 const app = express()
 
@@ -16,6 +16,7 @@ app.get('/', (req, res) => {
 
 //? Aqui esta el endpoint para la version 1 de mi api
 app.use('/api/v1', userRoutes)
+app.use('/api/v1', todosRoutes)
 
 app.post('/login', (req, res) => {
 	// Aqui comprobamos las credenciales del usuario y retornamos el token en caso de ser exitoso

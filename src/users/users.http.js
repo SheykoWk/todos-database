@@ -8,11 +8,11 @@
 const usersControllers = require('./users.controllers')
 
 const getUsers = (req, res) => {
-    console.log(req.user)
     res.status(200).json(usersControllers.getAllUsers())
 }
 
 const getUserById = (req, res) => {
+    console.log(req.user)
     const id = Number(req.params.id)
     res.status(200).json(usersControllers.getUserById(id))
 }

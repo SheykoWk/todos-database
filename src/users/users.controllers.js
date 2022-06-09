@@ -60,11 +60,17 @@ const deleteUser = (id) => {
     return usersDB
 }
 
+const getUserIdByEmail = (email) => {
+    const filteredUser = usersDB.filter((item) => item.email === email)
+    return filteredUser[0].id
+}
+
 module.exports = {
     getAllUsers,
     getUserById,
     createUser,
     editUser,
-    deleteUser
+    deleteUser,
+    getUserIdByEmail
 }
 
