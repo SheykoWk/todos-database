@@ -15,3 +15,19 @@ module.exports = (passport) => {
         })
     );
 };
+
+/*
+? req, res -> auth-middleware 
+
+(req, res, next) => {
+    if(req.user){
+        next()
+    } else {
+        res(400).json({message: 'Invalid credentials'})
+    }
+
+}, (req, res) => {
+    res.json({'message': 'hola'})
+}
+
+*/
